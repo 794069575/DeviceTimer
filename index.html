@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设备时间管理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>设备时间管理</h1>
+    <div id="devices">
+        <!-- 生成20个设备的控制面板 -->
+        <!-- 每个设备包括开始、结束按钮和显示时间和费用的区域 -->
+        <script>
+            for (let i = 1; i <= 20; i++) {
+                document.write(`
+                    <div class="device">
+                        <h2>设备 ${i}</h2>
+                        <button onclick="startTimer(${i})">开始</button>
+                        <button onclick="stopTimer(${i})">结束</button>
+                        <div id="timer${i}">未开始</div>
+                        <div id="cost${i}">费用: 0元</div>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

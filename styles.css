@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+.device {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+    margin-right: 10px;
+}
+
+#devices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.device {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
